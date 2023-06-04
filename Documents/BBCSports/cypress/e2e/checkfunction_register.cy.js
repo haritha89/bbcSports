@@ -3,6 +3,7 @@ import { registerUserBBC } from "../support/util";
 
 describe("Register new user in BBC Sports", () => {
   let isComment = false;
+  cy.log("product");
   it("bbc comments", () => {
     const listOfUrls = ["https://www.bbc.co.uk/sport/cricket/65799931"];
     listOfUrls.forEach((url) => {
