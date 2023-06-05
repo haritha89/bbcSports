@@ -3,9 +3,15 @@ import { registerUserBBC } from "../support/util";
 
 describe("Register new user in BBC Sports", () => {
   let isComment = false;
-  cy.log("product");
-  it("bbc comments", () => {
-    const listOfUrls = ["https://www.bbc.co.uk/sport/cricket/65799931"];
+  const base_url = Cypress.env("BASE_URL");
+  let listOfUrls = [];
+  
+  before(() => {
+    listOfUrls = [
+      `${base_url}/sport/cricket/65799931`
+    ];
+  });
+  it("Register new user ", () => {
     listOfUrls.forEach((url) => {
       cy.visit(url);
       cy.get(selectors.viewComments).click();

@@ -12,7 +12,7 @@ describe("Validate view comments", () => {
       `${base_url}/sport/football/65494105`,
     ];
   });
-  it("bbc comments", () => {
+  it("View comments Section", () => {
     listOfUrls.forEach((url) => {
       cy.visit(url);
       cy.get(selectors.viewComments).click();
