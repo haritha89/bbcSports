@@ -6,8 +6,8 @@ export const signInToBBC = () => {
                 password: "#password-input",
                 submit: "button#submit-button"
               };
-              cy.get(selectors.emailID).type("harita.rithu@gmail.com");
-              cy.get(selectors.password).type("Harini@123");
+              cy.get(selectors.emailID).type("marlin1+123@ethereal.email");
+              cy.get(selectors.password).type("vaH84CbfxUv6hWDNVk");
               cy.get(selectors.submit).click();
             });
           }
@@ -34,7 +34,7 @@ export const  registerUserBBC = () => {
      cy.get(selectors.monthInput).type("03");
      cy.get(selectors.yearInput).type("2000");
      cy.get(selectors.submit).contains('Continue').click()
-     cy.get(selectors.emailID).type("marlin1+2@ethereal.email");
+     cy.get(selectors.emailID).type("marlin1+01245@ethereal.email");
      cy.get(selectors.password).type("vaH84CbfxUv6hWDNVk");
      cy.get(selectors.postcodeInput).type("BS324AB");
      cy.get(selectors.genderInput).select("female");
